@@ -8,7 +8,7 @@ def yincang1(num2):
     os.chdir("%s"%(num2))
 def xianshi1(num3):
     os.chdir("%s"%(num3))
-g.msgbox("欢迎使用隐藏文件小程序\n 说明：本程序由朱世祥制作，隐藏文件绝对机密，尽管对方知道代码可是他不知道文件名照样无法发现\n 版本号1.0")
+g.msgbox("欢迎使用隐藏文件小程序\n 说明：本程序由制作，隐藏文件绝对机密，尽管对方知道代码可是他不知道文件名照样无法发现\n 版本号1.0")
 while True:
     cd = g.buttonbox("菜单","菜单",choices=["使用说明","隐藏/显示文件","退出"])
     if cd == "使用说明":
