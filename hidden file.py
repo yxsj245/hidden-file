@@ -41,7 +41,7 @@ def chakanwenjian():
     file = open("password","r")
     mima = file.read()
     print(mima)
-    password = g.passwordbox("请输入访问授权码")
+    password = g.passwordbox("请输入访问授权码(请注意：如果您是首次启用此功能并且直接查看会出现一直报授权码错误，请您重新运行程序即可，此问题暂时未查找的原因)")
     if password == mima:
         file = open("jilulog","r")
         neirong = file.read()
@@ -122,6 +122,8 @@ if "concealData" in wenjian:
                     g.msgbox("检测到您已经开启了此功能，请勿重复开启！")
                 else:
                     jilu()
+                    os.chdir("C:\concealData\Data")
+                    file = open("jilulog","a")
                     password = g.passwordbox("请输入要注册的查看授权码")
                     os.chdir("C:\concealData\Data")
                     file = open("password","w")
